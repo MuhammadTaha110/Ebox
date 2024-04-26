@@ -1,3 +1,4 @@
+//Theme Colors
 const mainColor = '#f9b623';
 const bgColor = '#feebc0';
 
@@ -7,6 +8,7 @@ home.className = 'home';
 home.style.width ='100%';
 home.style.backgroundColor = bgColor;
 home.style.textAlign='center';
+home.style.display = 'flex';
 
 document.body.appendChild(home);
 document.body.style.backgroundColor =bgColor;
