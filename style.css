@@ -1,0 +1,25 @@
+:root {
+    --bg-color:#feebc0;
+    --main-color:#f9b623;
+    --shadow-color:#f5c79a;
+    --card-bg-color:#ffefe5;
+    --border-color:#fef3d8;
+    --theme-color1:#ff6900;
+    --theme-color2:#453e9d;
+    --theme-color3:#03af66;
+    --theme-color4:#088de7;
+    --theme-color5:#000100;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+body{
+    font-family: Poppins;
+}
+/*body{
+    background-color: var(--bg-color);
+}*/
+
