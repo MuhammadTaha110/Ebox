@@ -41,19 +41,27 @@ headingWrapper.style.fontSize = '1.4rem'
 homeHeadDiv.appendChild(headingWrapper);
 home.appendChild(homeHeadDiv);
 
-creatCards(5)
 
-function creatCards(cardsQuantity) {
+
+
+createCards(5)
+
+
+//function to creat items cards
+function createCards(cardsQuantity) {
+
+    const cardContainer = document.createElement('div');
+    cardContainer.style.display = 'flex';
+    cardContainer.style.flexWrap = 'wrap';
+    home.appendChild(cardContainer);
+
     for (let i = 0; i < cardsQuantity; i++) {
-        const cardContainer = document.createElement('div');
-        cardContainer.style.display = 'flex';
-        
-        home.appendChild(cardContainer);
+
         cardContainer.className = 'cardContainer';
 
         const card = document.createElement('div');
-        card.style.width = '30%';
-        card.style.width = '80px';
+        card.style.width = '200px'; // Set width here
+        card.style.height = '80px'; // Set height here
         card.style.backgroundColor = cardBgColor;
 
         cardContainer.appendChild(card);
@@ -62,9 +70,6 @@ function creatCards(cardsQuantity) {
         // Append the text node to the heading wrapper
         card.appendChild(heading);
     }
-
-   
-
 }
 
 
