@@ -46,6 +46,8 @@ creatCards(5)
 function creatCards(cardsQuantity) {
     for (let i = 0; i < cardsQuantity; i++) {
         const cardContainer = document.createElement('div');
+        cardContainer.style.display = 'flex';
+        
         home.appendChild(cardContainer);
         cardContainer.className = 'cardContainer';
 
