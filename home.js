@@ -1,23 +1,30 @@
 const mainColor = '#f9b623';
 const bgColor = '#feebc0';
 
+//Home Main Div Element
 const home = document.createElement('div');
 home.className = 'home';
-
-const heading = document.createTextNode('Home');
-home.appendChild(heading);
-
 home.style.width ='100%';
 home.style.backgroundColor = bgColor;
 home.style.textAlign='center';
-document.body.appendChild(home);
 
+document.body.appendChild(home);
+document.body.style.backgroundColor =bgColor;
+
+//Home Inner Div Element
 const homeHeadDiv = document.createElement('div');
-home.style.width ='80%';
-home.style.height='150px'
-home.style.backgroundColor = mainColor;
+homeHeadDiv.style.marginLeft = 'auto';
+homeHeadDiv.style.marginRight = 'auto';
+homeHeadDiv.style.width ='80%';
+homeHeadDiv.style.height='200px'
+homeHeadDiv.style.backgroundColor = mainColor;
+homeHeadDiv.style.borderRadius = '12px';
+
+//Home Inner Div Heading Element
+const heading = document.createTextNode('Home');
+homeHeadDiv.appendChild(heading);
+
 home.appendChild(homeHeadDiv);
-home.
 
 console.warn(home);
 
