@@ -113,11 +113,7 @@ function createCards(cardsQuantity) {
                 color=5;
             }
         
-        
-
-
-
-
+    
         // Set the width and height of the new div element
         cardInnerDivBG.style.width = '84%';
         cardInnerDivBG.style.borderRadius = '12px';
