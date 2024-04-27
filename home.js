@@ -48,7 +48,7 @@ homeHeadDiv.appendChild(ball);
 
 
 const sunMoon = document.querySelector('.sunMoon');
-sunMoon.style.margin = '0px auto';
+sunMoon.style.margin = '-30px 0px 20px 20px';
 sunMoon.style.borderRadius = '50%';
 sunMoon.style.width = '70px';
 sunMoon.style.height = '70px';
@@ -56,7 +56,7 @@ sunMoon.style.backgroundColor = 'orange';
 sunMoon.style.boxShadow = '0 0 35px 5px yellow, 0 0 25px 10px yellow inset';
 
 
-createCards(5)
+createCards(6)
 
 
 // *function to creat items cards
@@ -65,21 +65,32 @@ function createCards(cardsQuantity) {
     const cardContainer = document.createElement('div');
     cardContainer.style.display = 'flex';
     cardContainer.style.flexWrap = 'wrap';
+    cardContainer.style.justifyContent = 'space-around'
+    cardContainer.style.margin = '-120px auto ';
+    cardContainer.style.width = '95%';
+    //cardContainer.style.backgroundColor = 'pink'
     home.appendChild(cardContainer);
 
     for (let i = 0; i < cardsQuantity; i++) {
 
         cardContainer.className = 'cardContainer';
 
+        //* Card Element
         const card = document.createElement('div');
-        card.style.width = '200px'; // Set width here
-        card.style.height = '80px'; // Set height here
+        card.style.width = '220px'; // Set width here
+        card.style.height = '280px'; // Set height here
         card.style.backgroundColor = cardBgColor;
+        card.style.borderRadius = '12px'
+        card.style.margin = '12px 5px'
+        card.className = 'card';
+
+        const cardInnerDivBG = document.createElement('div');
+        cardInnerDivBG.className = 'cardInnerBG';
 
         cardContainer.appendChild(card);
-        card.className = 'card';
         const heading = document.createTextNode('Card');
-        // Append the text node to the heading wrapper
+
+        // TODO: Append the text node to the heading wrapper
         card.appendChild(heading);
     }
 }
