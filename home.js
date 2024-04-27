@@ -87,7 +87,11 @@ function createCards(cardsQuantity) {
 
         const cardInnerDivBG = document.createElement('div');
         cardInnerDivBG.className = 'cardInnerBG';
-        cardInnerDivBG.backgroundColor= 
+        cardInnerDivBG.backgroundColor= themeColor4;
+        cardInnerDivBG.style.width = '80%'
+        cardInnerDivBG.style.height='50px'
+
+        card.appendChild(cardInnerDivBG);
 
         cardContainer.appendChild(card);
         const heading = document.createTextNode('Card');
