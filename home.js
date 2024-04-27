@@ -126,7 +126,23 @@ function createCards(cardsQuantity) {
         card.appendChild(cardInnerDivBG);
 
         cardContainer.appendChild(card);
-        
+
+        const productTittleContainer = document.createElement('div');
+        const productPriceContainer = document.createElement('div');
+
+        productTittleContainer.className = 'productTittle';
+        productPriceContainer.className = 'productPrice';
+
+
+        const productTittle = document.createTextNode('Nike AirMax');
+        const productPrice = document.createTextNode('$44.26');
+
+
+
+        // TODO: Append the text node to the heading wrapper
+
+        card.appendChild(productTittleContainer);
+        card.appendChild(productPriceCoproductTittleContainer);
 
 
     }
