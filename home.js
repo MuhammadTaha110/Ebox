@@ -105,6 +105,9 @@ function createCards(cardsQuantity) {
     cardInnerDivBG.className = 'cardInnerBG';
     // Set the background color of the new div element
     cardInnerDivBG.style.backgroundColor = themeColors[color];
+    cardInnerDivBG.style.boxShadow = '10px 10px 10px rgba(0, 0, 0, 0.5)';
+
+
 
       //* Card InnerDiv Circle
       const cardInnerCircleBG = document.createElement('div');
@@ -126,9 +129,11 @@ function createCards(cardsQuantity) {
       card.appendChild(productImage);
       productImage.style.position= 'absolute';
       productImage.src = 'imgs/Nike Giannis.png';
-      productImage.style.width = '70%';
+      productImage.style.width = '75%';
       productImage.style.top = '30%'
       productImage.style.left = '10%'
+      productImage.style.filter = 'drop-shadow(#000000 0.5rem 0.5rem 1rem)';
+      productImage.style.transform = 'rotate(-25deg)';
 
 
     // * Give Colors to cardsInner BG 
