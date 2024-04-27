@@ -2,6 +2,7 @@
 const mainColor = '#f9b623';
 const bgColor = '#feebc0';
 const cardBgColor = '#ffefe5';
+const themeColor4 = '#088de7';
 
 //Home Main Div Element
 const home = document.createElement('div');
@@ -86,6 +87,7 @@ function createCards(cardsQuantity) {
 
         const cardInnerDivBG = document.createElement('div');
         cardInnerDivBG.className = 'cardInnerBG';
+        cardInnerDivBG.backgroundColor= 
 
         cardContainer.appendChild(card);
         const heading = document.createTextNode('Card');
