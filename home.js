@@ -1,22 +1,9 @@
-//Theme Colors
-const themeColors = [
-    '#feebc0', // * --bg-color
-    '#f9b623', // * --main-color
-    '#f5c79a', // * --shadow-color
-    '#ffefe5', // * --card-bg-color
-    '#fef3d8', // * --border-color
-    '#ff6900', // * --theme-color1
-    '#453e9d', // * --theme-color2
-    '#03af66', // * --theme-color3
-    '#088de7', // * --theme-color4
-    '#000100'  // * --theme-color5
-];
-
-//? ColorIndex to give unique colors to cards
-let color = 5
+//* Theme Colors
+import { themeColors } from "./theme.js";
 
 
-//Home Main Div Element
+
+//!Home Main Div Element
 const home = document.createElement('div');
 home.className = 'home';
 home.style.width = '100%';
@@ -27,13 +14,12 @@ home.style.textAlign = 'center';
 document.body.appendChild(home);
 document.body.style.backgroundColor = themeColors[0];
 
-//Home Inner Div Element
+//!Home Inner Div Element
 const homeHeadDiv = document.createElement('div');
 homeHeadDiv.style.marginLeft = 'auto';
 homeHeadDiv.style.marginRight = 'auto';
 homeHeadDiv.style.marginTop = '80px';
 homeHeadDiv.style.boxShadow = 'var(--shadow-color) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px'
-
 homeHeadDiv.style.width = '95%';
 homeHeadDiv.style.height = '250px'
 homeHeadDiv.style.backgroundColor = themeColors[1];
@@ -41,26 +27,26 @@ homeHeadDiv.style.borderRadius = '12px';
 homeHeadDiv.className = 'homeHeadContainer';
 
 
-// Create a div element to wrap the heading text node
+//* Create a div element to wrap the heading text node
 const headingWrapper = document.createElement('div');
-// Create the text node
+//* Create the text node
 const heading = document.createTextNode('Home');
-// Append the text node to the heading wrapper
+//* Append the text node to the heading wrapper
 headingWrapper.appendChild(heading);
-// Apply marginTop style to the heading wrapper
-headingWrapper.style.paddingTop = '25px'; // Adjust the value as needed
+//* Apply marginTop style to the heading wrapper
+headingWrapper.style.paddingTop = '25px'; 
 headingWrapper.style.fontWeight = '600'
 headingWrapper.style.fontSize = '1.4rem'
 // * Append the heading wrapper to the homeHeadDiv or any other parent element
 homeHeadDiv.appendChild(headingWrapper);
 home.appendChild(homeHeadDiv);
 
-// TODO Object of Sun and Moon
+// !Container Object of Sun and Moon
 const ball = document.createElement('div');
 ball.className = 'sunMoon';
 homeHeadDiv.appendChild(ball);
 
-
+//* Object of Sun and Moon
 const sunMoon = document.querySelector('.sunMoon');
 sunMoon.style.margin = '-30px 0px 20px 20px';
 sunMoon.style.borderRadius = '50%';
@@ -73,7 +59,7 @@ sunMoon.style.boxShadow = '0 0 35px 5px yellow, 0 0 25px 10px yellow inset';
 createCards(16)
 
 
-// *function to creat items cards
+// *function to create new items cards
 function createCards(cardsQuantity) {
 
     const cardContainer = document.createElement('div');
@@ -115,14 +101,23 @@ function createCards(cardsQuantity) {
       
         // Set the background color of the new div element
         cardInnerDivBG.style.backgroundColor = themeColors[color];
-        if(color>=5 &&  color<=8){
-            color++;
+        let flag=0;
 
+        if(flag==0){
+            if(color<=8){
+                color++;
+                console.warn(color)
+            }
+            else{
+                flag=1;
+            }
         }
+        
 
-       
 
-       
+        console.warn(flag)
+
+
         // Set the width and height of the new div element
         cardInnerDivBG.style.width = '84%';
         cardInnerDivBG.style.borderRadius = '12px';
