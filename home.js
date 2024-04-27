@@ -81,6 +81,8 @@ function createCards(cardsQuantity) {
 
     //* Card Element
     const card = document.createElement('div');
+    cardContainer.appendChild(card);
+
     card.style.width = '260px'; // Set width here
     card.style.height = '300px'; // Set height here
     card.style.backgroundColor = themeColors[3];
@@ -91,16 +93,21 @@ function createCards(cardsQuantity) {
 
     //* card InnerDiv Rectangle
     const cardInnerDivBG = document.createElement('div');
-
+    // Append the new rectangular div element to the card
+    card.appendChild(cardInnerDivBG);
+    // Set the width and height of the new div element
+    cardInnerDivBG.style.width = '84%';
+    cardInnerDivBG.style.borderRadius = '12px';
+    cardInnerDivBG.style.height = '100px';
+    cardInnerDivBG.style.margin = '25% auto'
     // Set the class name of the new div element
     cardInnerDivBG.className = 'cardInnerBG';
     // Set the background color of the new div element
     cardInnerDivBG.style.backgroundColor = themeColors[color];
 
-      //* card InnerDiv Rectangle
+      //* Card InnerDiv Circle
       const cardInnerCircleBG = document.createElement('div');
       cardInnerDivBG.appendChild(cardInnerCircleBG);
-
       // Set the class name of the new div element
       cardInnerCircleBG.className = 'cardInnerCircle';
       // Set the background color of the new div element
@@ -115,7 +122,6 @@ function createCards(cardsQuantity) {
       
 
 
-
     // * Give Colors to cardsInner BG 
     if (color <= 8) {
         color++;
@@ -125,16 +131,6 @@ function createCards(cardsQuantity) {
     }
 
 
-    // Set the width and height of the new div element
-    cardInnerDivBG.style.width = '84%';
-    cardInnerDivBG.style.borderRadius = '12px';
-    cardInnerDivBG.style.height = '100px';
-    cardInnerDivBG.style.margin = '25% auto'
-
-    // Append the new div element to the card
-    card.appendChild(cardInnerDivBG);
-
-    cardContainer.appendChild(card);
 
     const productTittleContainer = document.createElement('div');
     const productPriceContainer = document.createElement('div');
