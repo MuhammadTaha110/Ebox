@@ -90,9 +90,14 @@ function createCards(cardsQuantity) {
         const card = document.createElement('div');
         card.style.width = '220px'; // Set width here
         card.style.height = '280px'; // Set height here
-        const cardBgColor =  Math.random()*8;
 
-        card.style.backgroundColor = themeColors[cardBgColor];
+        const randomNumber = Math.random();
+
+        // Scale the random number to fit the range [5, 8]
+        const cardBg = Math.floor(randomNumber * 4) + 5;
+
+
+        card.style.backgroundColor = themeColors[3];
         card.style.borderRadius = '12px'
         card.style.margin = '12px 5px'
         card.className = 'card';
@@ -104,15 +109,15 @@ function createCards(cardsQuantity) {
         cardInnerDivBG.className = 'cardInnerBG';
 
         // Set the background color of the new div element
-        cardInnerDivBG.style.backgroundColor = themeColors[8];
+        cardInnerDivBG.style.backgroundColor = themeColors[cardBg];
 
         // Set the width and height of the new div element
         cardInnerDivBG.style.width = '84%';
         cardInnerDivBG.style.borderRadius = '12px';
         cardInnerDivBG.style.height = '100px';
         cardInnerDivBG.style.margin = '25% auto'
-        
-    
+
+
 
         // Append the new div element to the card
         card.appendChild(cardInnerDivBG);
