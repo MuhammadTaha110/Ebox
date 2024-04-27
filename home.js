@@ -34,15 +34,22 @@ const heading = document.createTextNode('Home');
 // Append the text node to the heading wrapper
 headingWrapper.appendChild(heading);
 // Apply marginTop style to the heading wrapper
-headingWrapper.style.paddingTop = '12px'; // Adjust the value as needed
+headingWrapper.style.paddingTop = '25px'; // Adjust the value as needed
 headingWrapper.style.fontWeight = '600'
 headingWrapper.style.fontSize = '1.4rem'
 // Append the heading wrapper to the homeHeadDiv or any other parent element
 homeHeadDiv.appendChild(headingWrapper);
 home.appendChild(homeHeadDiv);
 
+const sunMoon = createElement('div');
+sunMoon.style.margin = '50px auto';
+sunMoon.style.borderRadius = '50%';
+sunMoon.style.width = '70px';
+sunMoon.style.height = '70px';
+sunMoon.style.backgroundColor = 'orange';
+sunMoon.style.boxShadow = '0 0 35px 5px yellow, 0 0 25px 10px yellow inset';
 
-
+home.appendChild(sunMoon);
 
 createCards(5)
 
