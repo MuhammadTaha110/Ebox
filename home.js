@@ -34,7 +34,7 @@ const heading = document.createTextNode('Home');
 // Append the text node to the heading wrapper
 headingWrapper.appendChild(heading);
 // Apply marginTop style to the heading wrapper
-headingWrapper.style.marginTop = '12px'; // Adjust the value as needed
+headingWrapper.style.paddingTop = '12px'; // Adjust the value as needed
 headingWrapper.style.fontWeight = '600'
 headingWrapper.style.fontSize = '1.4rem'
 // Append the heading wrapper to the homeHeadDiv or any other parent element
