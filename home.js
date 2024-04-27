@@ -12,6 +12,9 @@ const themeColors = [
     '#000100'  // * --theme-color5
 ];
 
+//? ColorIndex to give unique colors to cards
+let color = 5
+
 
 //Home Main Div Element
 const home = document.createElement('div');
@@ -67,7 +70,7 @@ sunMoon.style.backgroundColor = 'orange';
 sunMoon.style.boxShadow = '0 0 35px 5px yellow, 0 0 25px 10px yellow inset';
 
 
-createCards(6)
+createCards(16)
 
 
 // *function to creat items cards
@@ -94,7 +97,7 @@ function createCards(cardsQuantity) {
         const randomNumber = Math.random();
 
         // Scale the random number to fit the range [5, 8]
-        const cardBg = Math.floor(randomNumber * 4) + 5;
+        //const cardBg = Math.floor(randomNumber * 4) + 5;
 
 
         card.style.backgroundColor = themeColors[3];
@@ -108,9 +111,18 @@ function createCards(cardsQuantity) {
         // Set the class name of the new div element
         cardInnerDivBG.className = 'cardInnerBG';
 
+        
+      
         // Set the background color of the new div element
-        cardInnerDivBG.style.backgroundColor = themeColors[cardBg];
+        cardInnerDivBG.style.backgroundColor = themeColors[color];
+        if(color>=5 &&  color<=8){
+            color++;
 
+        }
+
+       
+
+       
         // Set the width and height of the new div element
         cardInnerDivBG.style.width = '84%';
         cardInnerDivBG.style.borderRadius = '12px';
