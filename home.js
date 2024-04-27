@@ -1,8 +1,6 @@
 //* Theme Colors
 import { themeColors } from "./theme.js";
 
-//? ColorIndex to give unique colors to cards
-let color = 5
 
 
 //!Home Main Div Element
@@ -58,6 +56,8 @@ sunMoon.style.backgroundColor = 'orange';
 sunMoon.style.boxShadow = '0 0 35px 5px yellow, 0 0 25px 10px yellow inset';
 
 
+//? ColorIndex to give unique colors to cards
+let color = 5
 createCards(16)
 
 
