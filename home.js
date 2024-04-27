@@ -1,6 +1,8 @@
 //* Theme Colors
 import { themeColors } from "./theme.js";
 
+//? ColorIndex to give unique colors to cards
+let color = 5
 
 
 //!Home Main Div Element
