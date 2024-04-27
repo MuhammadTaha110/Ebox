@@ -1,6 +1,7 @@
 //* Theme Colors
 import { themeColors } from "./theme.js";
-
+//? ColorIndex to give unique colors to cards
+let color = 5
 
 
 //!Home Main Div Element
@@ -56,8 +57,8 @@ sunMoon.style.backgroundColor = 'orange';
 sunMoon.style.boxShadow = '0 0 35px 5px yellow, 0 0 25px 10px yellow inset';
 
 
-//? ColorIndex to give unique colors to cards
-let color = 5
+
+
 createCards(16)
 
 
@@ -79,7 +80,7 @@ function createCards(cardsQuantity) {
 
         //* Card Element
         const card = document.createElement('div');
-        card.style.width = '220px'; // Set width here
+        card.style.width = '260px'; // Set width here
         card.style.height = '280px'; // Set height here
 
         const randomNumber = Math.random();
@@ -103,21 +104,18 @@ function createCards(cardsQuantity) {
       
         // Set the background color of the new div element
         cardInnerDivBG.style.backgroundColor = themeColors[color];
-        let flag=0;
 
-        if(flag==0){
+            // * Give Colors to cardsInner BG 
             if(color<=8){
                 color++;
-                console.warn(color)
             }
             else{
-                flag=1;
+                color=5;
             }
-        }
+        
         
 
 
-        console.warn(flag)
 
 
         // Set the width and height of the new div element
