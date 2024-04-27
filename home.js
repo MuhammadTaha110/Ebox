@@ -37,24 +37,29 @@ headingWrapper.appendChild(heading);
 headingWrapper.style.paddingTop = '25px'; // Adjust the value as needed
 headingWrapper.style.fontWeight = '600'
 headingWrapper.style.fontSize = '1.4rem'
-// Append the heading wrapper to the homeHeadDiv or any other parent element
+// * Append the heading wrapper to the homeHeadDiv or any other parent element
 homeHeadDiv.appendChild(headingWrapper);
 home.appendChild(homeHeadDiv);
 
-const sunMoon = createElement('div');
-sunMoon.style.margin = '50px auto';
+// TODO Object of Sun and Moon
+const ball = document.createElement('div');
+ball.className = 'sunMoon';
+homeHeadDiv.appendChild(ball);
+
+
+const sunMoon = document.querySelector('.sunMoon');
+sunMoon.style.margin = '0px auto';
 sunMoon.style.borderRadius = '50%';
 sunMoon.style.width = '70px';
 sunMoon.style.height = '70px';
 sunMoon.style.backgroundColor = 'orange';
 sunMoon.style.boxShadow = '0 0 35px 5px yellow, 0 0 25px 10px yellow inset';
 
-home.appendChild(sunMoon);
 
 createCards(5)
 
 
-//function to creat items cards
+// *function to creat items cards
 function createCards(cardsQuantity) {
 
     const cardContainer = document.createElement('div');
