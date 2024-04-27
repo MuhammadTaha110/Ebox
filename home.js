@@ -138,11 +138,14 @@ function createCards(cardsQuantity) {
         const productPrice = document.createTextNode('$44.26');
 
 
+        productTittleContainer.appendChild(productTittle);
+        productPriceContainer.appendChild(productPrice);
+
 
         // TODO: Append the text node to the heading wrapper
 
         card.appendChild(productTittleContainer);
-        card.appendChild(productPriceCoproductTittleContainer);
+        card.appendChild(productPriceContainer);
 
 
     }
