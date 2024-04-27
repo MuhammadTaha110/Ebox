@@ -1,7 +1,10 @@
 //* Theme Colors
 import { themeColors } from "./theme.js";
+
+//* Global Identifiers
 //? ColorIndex to give unique colors to cards
 let color = 5
+let cardsQuantity = 16;
 
 
 //!Home Main Div Element
@@ -58,14 +61,8 @@ sunMoon.style.boxShadow = '0 0 35px 5px yellow, 0 0 25px 10px yellow inset';
 
 
 
-
-createCards(16)
-
-
-// *function to create new items cards
-function createCards(cardsQuantity) {
-
-    const cardContainer = document.createElement('div');
+// ! Product Card Container
+const cardContainer = document.createElement('div');
     cardContainer.style.display = 'flex';
     cardContainer.style.flexWrap = 'wrap';
     cardContainer.style.justifyContent = 'space-around'
@@ -74,14 +71,23 @@ function createCards(cardsQuantity) {
     //cardContainer.style.backgroundColor = 'pink'
     home.appendChild(cardContainer);
 
+
     for (let i = 0; i < cardsQuantity; i++) {
+        createCards()
+        }
+// *function to create new items cards
+function createCards(cardsQuantity) {
+
+    
+
+   
 
         cardContainer.className = 'cardContainer';
 
         //* Card Element
         const card = document.createElement('div');
         card.style.width = '260px'; // Set width here
-        card.style.height = '280px'; // Set height here
+        card.style.height = '300px'; // Set height here
 
         const randomNumber = Math.random();
 
@@ -137,6 +143,13 @@ function createCards(cardsQuantity) {
         const productTittle = document.createTextNode('Nike AirMax');
         const productPrice = document.createTextNode('$44.26');
 
+        productTittleContainer.style.color= themeColors[6];
+        productPriceContainer.style.color= themeColors[6];
+
+        productTittleContainer.style.fontWeight= '800';
+
+
+
 
         productTittleContainer.appendChild(productTittle);
         productPriceContainer.appendChild(productPrice);
@@ -148,7 +161,7 @@ function createCards(cardsQuantity) {
         card.appendChild(productPriceContainer);
 
 
-    }
+    
 }
 
 
