@@ -89,6 +89,7 @@ function createCards(cardsQuantity) {
     card.style.borderRadius = '12px'
     card.style.margin = '12px 5px'
     card.className = 'card';
+    card.style.position= 'relative';
     card.style.boxShadow = 'var(--shadow-color) 0px 54px 55px, var(--shadow-color) 0px -12px 30px, var(--shadow-color) 0px 4px 6px, var(--shadow-color) 0px 12px 13px, var(--shadow-color) 0px -3px 5px'
 
     //* card InnerDiv Rectangle
@@ -119,7 +120,15 @@ function createCards(cardsQuantity) {
       cardInnerCircleBG.style.border = '2px solid white';
 
 
-      
+      //* Card Image Element
+
+      const productImage = document.createElement('img');
+      card.appendChild(productImage);
+      productImage.style.position= 'absolute';
+      productImage.src = 'imgs/Nike Giannis.png';
+      productImage.style.width = '70%';
+      productImage.style.top = '30%'
+      productImage.style.left = '10%'
 
 
     // * Give Colors to cardsInner BG 
