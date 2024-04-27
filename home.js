@@ -1,29 +1,39 @@
 //Theme Colors
-const mainColor = '#f9b623';
-const bgColor = '#feebc0';
-const cardBgColor = '#ffefe5';
-const themeColor4 = '#088de7';
+const themeColors = [
+    '#feebc0', // * --bg-color
+    '#f9b623', // * --main-color
+    '#f5c79a', // * --shadow-color
+    '#ffefe5', // * --card-bg-color
+    '#fef3d8', // * --border-color
+    '#ff6900', // * --theme-color1
+    '#453e9d', // * --theme-color2
+    '#03af66', // * --theme-color3
+    '#088de7', // * --theme-color4
+    '#000100'  // * --theme-color5
+];
+
 
 //Home Main Div Element
 const home = document.createElement('div');
 home.className = 'home';
 home.style.width = '100%';
-home.style.backgroundColor = bgColor;
+home.style.backgroundColor = themeColors[0];
 home.style.textAlign = 'center';
 //home.style.display = 'flex';
 
 document.body.appendChild(home);
-document.body.style.backgroundColor = bgColor;
+document.body.style.backgroundColor = themeColors[0];
 
 //Home Inner Div Element
 const homeHeadDiv = document.createElement('div');
 homeHeadDiv.style.marginLeft = 'auto';
 homeHeadDiv.style.marginRight = 'auto';
 homeHeadDiv.style.marginTop = '80px';
+homeHeadDiv.style.boxShadow = 'var(--shadow-color) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px'
 
 homeHeadDiv.style.width = '95%';
 homeHeadDiv.style.height = '250px'
-homeHeadDiv.style.backgroundColor = mainColor;
+homeHeadDiv.style.backgroundColor = themeColors[1];
 homeHeadDiv.style.borderRadius = '12px';
 homeHeadDiv.className = 'homeHeadContainer';
 
@@ -80,17 +90,31 @@ function createCards(cardsQuantity) {
         const card = document.createElement('div');
         card.style.width = '220px'; // Set width here
         card.style.height = '280px'; // Set height here
-        card.style.backgroundColor = cardBgColor;
+        const cardBgColor =  Math.random()*8;
+
+        card.style.backgroundColor = themeColors[cardBgColor];
         card.style.borderRadius = '12px'
         card.style.margin = '12px 5px'
         card.className = 'card';
+        card.style.boxShadow = 'var(--shadow-color) 0px 54px 55px, var(--shadow-color) 0px -12px 30px, var(--shadow-color) 0px 4px 6px, var(--shadow-color) 0px 12px 13px, var(--shadow-color) 0px -3px 5px'
 
         const cardInnerDivBG = document.createElement('div');
-        cardInnerDivBG.className = 'cardInnerBG';
-        cardInnerDivBG.backgroundColor= themeColor4;
-        cardInnerDivBG.style.width = '80%'
-        cardInnerDivBG.style.height='50px'
 
+        // Set the class name of the new div element
+        cardInnerDivBG.className = 'cardInnerBG';
+
+        // Set the background color of the new div element
+        cardInnerDivBG.style.backgroundColor = themeColors[8];
+
+        // Set the width and height of the new div element
+        cardInnerDivBG.style.width = '84%';
+        cardInnerDivBG.style.borderRadius = '12px';
+        cardInnerDivBG.style.height = '100px';
+        cardInnerDivBG.style.margin = '25% auto'
+        
+    
+
+        // Append the new div element to the card
         card.appendChild(cardInnerDivBG);
 
         cardContainer.appendChild(card);
