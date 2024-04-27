@@ -126,10 +126,9 @@ function createCards(cardsQuantity) {
         card.appendChild(cardInnerDivBG);
 
         cardContainer.appendChild(card);
-        const heading = document.createTextNode('Card');
+        
 
-        // TODO: Append the text node to the heading wrapper
-        card.appendChild(heading);
+
     }
 }
 
