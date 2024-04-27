@@ -1,5 +1,6 @@
 //* Theme Colors
 import { themeColors } from "./theme.js";
+import { products } from "./products.js";
 
 //* Global Identifiers
 //? ColorIndex to give unique colors to cards
@@ -27,7 +28,7 @@ homeHeadDiv.style.boxShadow = 'var(--shadow-color) 0px 54px 55px, rgba(0, 0, 0, 
 homeHeadDiv.style.width = '95%';
 homeHeadDiv.style.height = '250px'
 homeHeadDiv.style.backgroundColor = themeColors[1];
-homeHeadDiv.style.borderRadius = '12px';
+homeHeadDiv.style.borderRadius = '18px';
 homeHeadDiv.className = 'homeHeadContainer';
 
 
@@ -71,8 +72,9 @@ cardContainer.style.width = '95%';
 cardContainer.className = 'cardContainer';
 home.appendChild(cardContainer);
 
-
+let id;
 for (let i = 0; i < cardsQuantity; i++) {
+    id = i;
     createCards()
 }
 // *function to create new items cards
@@ -86,7 +88,8 @@ function createCards(cardsQuantity) {
     card.style.width = '260px'; // Set width here
     card.style.height = '300px'; // Set height here
     card.style.backgroundColor = themeColors[3];
-    card.style.borderRadius = '12px'
+    card.style.borderRadius = '20px';
+    card.style.cursor = 'pointer';
     card.style.margin = '12px 5px'
     card.className = 'card';
     card.style.position= 'relative';
@@ -105,7 +108,8 @@ function createCards(cardsQuantity) {
     cardInnerDivBG.className = 'cardInnerBG';
     // Set the background color of the new div element
     cardInnerDivBG.style.backgroundColor = themeColors[color];
-    cardInnerDivBG.style.boxShadow = '10px 10px 10px rgba(0, 0, 0, 0.5)';
+    //cardInnerDivBG.style.boxShadow = '10px 10px 10px rgba(0, 0, 0, 0.5)';
+
 
 
 
@@ -127,8 +131,9 @@ function createCards(cardsQuantity) {
 
       const productImage = document.createElement('img');
       card.appendChild(productImage);
+      productImage.className = 'productImage';
       productImage.style.position= 'absolute';
-      productImage.src = 'imgs/Nike Giannis.png';
+      productImage.src =  products[id].img;
       productImage.style.width = '75%';
       productImage.style.top = '30%'
       productImage.style.left = '10%'
@@ -153,8 +158,8 @@ function createCards(cardsQuantity) {
     productPriceContainer.className = 'productPrice';
 
 
-    const productTittle = document.createTextNode('Nike AirMax');
-    const productPrice = document.createTextNode('$44.26');
+    const productTittle = document.createTextNode( products[id].tittle);
+    const productPrice = document.createTextNode( products[id].price);
 
     productTittleContainer.style.fontWeight = '800';
     productTittleContainer.style.color = themeColors[6];
@@ -170,4 +175,3 @@ function createCards(cardsQuantity) {
 
 
 }
-

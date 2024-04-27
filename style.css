@@ -23,3 +23,10 @@ body{
     background-color: var(--bg-color);
 }*/
 
+
+.card:hover .cardInnerBG{
+    transition: .1s ease;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+
