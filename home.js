@@ -91,7 +91,17 @@ let newProduct = (cardsQuantity) => {
     card.style.boxShadow = 'var(--shadow-color) 0px 54px 55px, var(--shadow-color) 0px -12px 30px, var(--shadow-color) 0px 4px 6px, var(--shadow-color) 0px 12px 13px, var(--shadow-color) 0px -3px 5px'
 
     //* card wishlist button
-    const wishlistButton = document.createElement('.button');
+    const wishlistButton = document.createElement('button');
+    card.appendChild(wishlistButton);
+
+    wishlistButton.style.width = '30px';
+    wishlistButton.style.height = '30px';
+    wishlistButton.style.borderRadius = '6px';
+    wishlistButton.className = '.wishlist-btn';
+    wishlistButton.style.backgroundColor = themeColors[6];
+
+
+
 
     //* card InnerDiv Rectangle
     const cardInnerDivBG = document.createElement('div');
