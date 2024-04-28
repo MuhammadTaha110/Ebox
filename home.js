@@ -179,4 +179,4 @@ function createCards(cardsQuantity) {
 console.log(home)
 
 
-let products = '';
+
