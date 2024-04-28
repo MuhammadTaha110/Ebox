@@ -89,6 +89,7 @@ let newProduct = (cardsQuantity) => {
     card.className = 'card';
     card.style.position= 'relative';
     card.style.boxShadow = 'var(--shadow-color) 0px 54px 55px, var(--shadow-color) 0px -12px 30px, var(--shadow-color) 0px 4px 6px, var(--shadow-color) 0px 12px 13px, var(--shadow-color) 0px -3px 5px'
+    card.style.userSelect ='none';
 
     //* card wishlist button
     const wishlistButton = document.createElement('button');
@@ -102,18 +103,16 @@ let newProduct = (cardsQuantity) => {
     wishlistButton.style.marginLeft = '80px';
     wishlistButton.style.marginTop = '10px';
     wishlistButton.style.position = 'absolute';
+
     var icon = document.createElement('i');
-    icon.className = 'fa-solid fa-heart';
-    
-    // Set styles for the icon
-    icon.style.marginRight = '5px'; 
-    icon.style.color='black'
-    
-    // Append the icon to the wishlistButton
     wishlistButton.appendChild(icon);
 
-
-
+    icon.className = 'fa-solid fa-heart';
+    //* Set styles for the icon
+    icon.style.display ='flex'
+    icon.style.justifyContent='center'
+    icon.style.fontSize = '1.2rem'
+    
 
 
 
