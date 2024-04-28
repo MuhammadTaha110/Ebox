@@ -2,16 +2,20 @@
 import { themeColors } from "./theme.js";
 import { products } from "./products.js";
 
-//! function to create productsPage
-
-    
-//* Global Identifiers
-//? ColorIndex to give unique colors to cards
-let color = 5
-let cardsQuantity = 16;
 
 const main = document.createElement('main');
 document.body.appendChild(main);
+
+let color = 5
+let cardsQuantity = 16;
+
+//! function to create productsPage
+let productsPage = (tittle) =>{
+
+//* Global Identifiers
+//? ColorIndex to give unique colors to cards
+
+
 
 
 //!Home Main Div Element
@@ -41,7 +45,7 @@ homeHeadDiv.className = 'homeHeadContainer';
 //* Create a div element to wrap the heading text node
 const headingWrapper = document.createElement('div');
 //* Create the text node
-const heading = document.createTextNode('Home');
+const heading = document.createTextNode(tittle);
 //* Append the text node to the heading wrapper
 headingWrapper.appendChild(heading);
 //* Apply marginTop style to the heading wrapper
@@ -68,7 +72,9 @@ sunMoon.style.height = '70px';
 sunMoon.style.backgroundColor = 'orange';
 sunMoon.style.boxShadow = '0 0 35px 5px yellow, 0 0 25px 10px yellow inset';
 
+}
 
+let newProductCardContainer = () =>{
 
 // ! Product Card Container
 const cardContainer = document.createElement('div');
@@ -209,10 +215,14 @@ let newProduct = (cardsQuantity) => {
 
 
 let id;
-for (let i = 0; i < cardsQuantity; i++) {
+for (let i = 0; i < 15; i++) {
     id = i;
-    newProduct(15)
+    newProduct(cardsQuantity)
 }
 
-console.log(main)
+}
+
+productsPage('Home')
+newProductCardContainer(15);
+//console.log(main)
 
