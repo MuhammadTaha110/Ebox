@@ -8,7 +8,6 @@ export let productPage = (tittle,cardsQuantity) => {
 //* Global Identifiers
 //? ColorIndex to give unique colors to cards
 let color = 5
-let cardsQuantity = 16;
 
 
 //!Home Main Div Element
@@ -199,12 +198,10 @@ let newProduct = (cardsQuantity) => {
 
 }
 
-console.log(home)
-
 let id;
 for (let i = 0; i < cardsQuantity; i++) {
-    id = i;
-    newProduct(15)
+    id=i;
+    newProduct()
 }
 
 }
