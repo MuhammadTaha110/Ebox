@@ -191,7 +191,9 @@ let newProduct = (cardsQuantity) => {
     productTittleContainer.style.color = themeColors[6];
     productPriceContainer.style.color = themeColors[6];
 
-    productTittleContainer.style.marginLeft='100px';
+    productTittleContainer.style.marginLeft='110px';
+    productPriceContainer.style.marginLeft='115px';
+
     
 
     productTittleContainer.appendChild(productTittle);
