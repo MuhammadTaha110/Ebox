@@ -78,7 +78,7 @@ for (let i = 0; i < cardsQuantity; i++) {
     createCards()
 }
 // *function to create new items cards
-function createCards(cardsQuantity) {
+let newProduct = (cardsQuantity) => {
 
     //* Card Element
     const card = document.createElement('div');
