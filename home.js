@@ -10,6 +10,9 @@ import { products } from "./products.js";
 let color = 5
 let cardsQuantity = 16;
 
+const main = document.createElement('main');
+document.body.appendChild(main);
+
 
 //!Home Main Div Element
 const home = document.createElement('div');
@@ -19,7 +22,7 @@ home.style.backgroundColor = themeColors[0];
 home.style.textAlign = 'center';
 //home.style.display = 'flex';
 
-document.body.appendChild(home);
+main.appendChild(home);
 document.body.style.backgroundColor = themeColors[0];
 
 //!Home Inner Div Element
@@ -75,7 +78,7 @@ cardContainer.style.justifyContent = 'space-around'
 cardContainer.style.margin = '-120px auto ';
 cardContainer.style.width = '95%';
 cardContainer.className = 'cardContainer';
-home.appendChild(cardContainer);
+main.appendChild(cardContainer);
 
 
 // *function to create new items cards
@@ -199,7 +202,6 @@ let newProduct = (cardsQuantity) => {
 
 }
 
-console.log(home)
 
 let id;
 for (let i = 0; i < cardsQuantity; i++) {
@@ -207,6 +209,5 @@ for (let i = 0; i < cardsQuantity; i++) {
     newProduct(15)
 }
 
+console.log(main)
 
-
-productPage('Shoes');
