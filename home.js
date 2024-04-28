@@ -80,7 +80,6 @@ for (let i = 0; i < cardsQuantity; i++) {
 // *function to create new items cards
 function createCards(cardsQuantity) {
 
-
     //* Card Element
     const card = document.createElement('div');
     cardContainer.appendChild(card);
@@ -110,9 +109,6 @@ function createCards(cardsQuantity) {
     cardInnerDivBG.style.backgroundColor = themeColors[color];
     //cardInnerDivBG.style.boxShadow = '10px 10px 10px rgba(0, 0, 0, 0.5)';
 
-
-
-
       //* Card InnerDiv Circle
       const cardInnerCircleBG = document.createElement('div');
       cardInnerDivBG.appendChild(cardInnerCircleBG);
@@ -122,10 +118,12 @@ function createCards(cardsQuantity) {
       cardInnerCircleBG.style.backgroundColor = themeColors[1];
       cardInnerCircleBG.style.width = '96px';
       cardInnerCircleBG.style.height = '96px';
-      cardInnerCircleBG.style.borderRadius = '50%';
+      cardInnerCircleBG.style.borderRadius = '0%';
+      cardInnerCircleBG.style.transform = 'rotate(-50deg)';
+
+      
       cardInnerCircleBG.style.margin = 'auto';
       cardInnerCircleBG.style.border = '2px solid white';
-
 
       //* Card Image Element
 
