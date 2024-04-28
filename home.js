@@ -88,7 +88,7 @@ let newProduct = (cardsQuantity) => {
     const card = document.createElement('div');
     cardContainer.appendChild(card);
 
-    card.style.width = '260px'; // Set width here
+    card.style.width = '280px'; // Set width here
     card.style.height = '300px'; // Set height here
     card.style.backgroundColor = themeColors[3];
     card.style.borderRadius = '20px';
@@ -108,7 +108,7 @@ let newProduct = (cardsQuantity) => {
     wishlistButton.style.borderRadius = '6px';
     wishlistButton.className = '.wishlist-btn';
     wishlistButton.style.backgroundColor = themeColors[1];
-    wishlistButton.style.marginLeft = '210px';
+    wishlistButton.style.marginLeft = '230px';
     wishlistButton.style.marginTop = '10px';
     wishlistButton.style.position = 'absolute';
 
