@@ -108,7 +108,7 @@ let newProduct = (cardsQuantity) => {
     wishlistButton.style.borderRadius = '6px';
     wishlistButton.className = '.wishlist-btn';
     wishlistButton.style.backgroundColor = themeColors[1];
-    wishlistButton.style.marginLeft = '80px';
+    wishlistButton.style.marginLeft = '210px';
     wishlistButton.style.marginTop = '10px';
     wishlistButton.style.position = 'absolute';
 
@@ -190,6 +190,9 @@ let newProduct = (cardsQuantity) => {
     productTittleContainer.style.fontWeight = '800';
     productTittleContainer.style.color = themeColors[6];
     productPriceContainer.style.color = themeColors[6];
+
+    productTittleContainer.style.marginLeft='100px';
+    
 
     productTittleContainer.appendChild(productTittle);
     productPriceContainer.appendChild(productPrice);
