@@ -99,7 +99,11 @@ let newProduct = (cardsQuantity) => {
     wishlistButton.style.borderRadius = '6px';
     wishlistButton.className = '.wishlist-btn';
     wishlistButton.style.backgroundColor = themeColors[1];
-    wishlistButton.style.marginLeft = 'auto';
+    wishlistButton.style.marginLeft = '80px';
+    wishlistButton.style.marginTop = '10px';
+    wishlistButton.style.position = 'absolute';
+
+
 
 
 
