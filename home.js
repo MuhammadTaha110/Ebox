@@ -175,3 +175,5 @@ function createCards(cardsQuantity) {
 
 
 }
+
+console.log(home)
