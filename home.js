@@ -72,11 +72,7 @@ cardContainer.style.width = '95%';
 cardContainer.className = 'cardContainer';
 home.appendChild(cardContainer);
 
-let id;
-for (let i = 0; i < cardsQuantity; i++) {
-    id = i;
-    createCards()
-}
+
 // *function to create new items cards
 let newProduct = (cardsQuantity) => {
 
@@ -93,6 +89,9 @@ let newProduct = (cardsQuantity) => {
     card.className = 'card';
     card.style.position= 'relative';
     card.style.boxShadow = 'var(--shadow-color) 0px 54px 55px, var(--shadow-color) 0px -12px 30px, var(--shadow-color) 0px 4px 6px, var(--shadow-color) 0px 12px 13px, var(--shadow-color) 0px -3px 5px'
+
+    //* card wishlist button
+    const wishlistButton = document.createElement('.button');
 
     //* card InnerDiv Rectangle
     const cardInnerDivBG = document.createElement('div');
@@ -175,3 +174,8 @@ console.log(home)
 
 
 
+let id;
+for (let i = 0; i < cardsQuantity; i++) {
+    id = i;
+    newProduct(15)
+}
