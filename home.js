@@ -118,10 +118,7 @@ function createCards(cardsQuantity) {
       cardInnerCircleBG.style.backgroundColor = themeColors[1];
       cardInnerCircleBG.style.width = '96px';
       cardInnerCircleBG.style.height = '96px';
-      cardInnerCircleBG.style.borderRadius = '0%';
-      cardInnerCircleBG.style.transform = 'rotate(-50deg)';
-
-      
+      cardInnerCircleBG.style.borderRadius = '50%';
       cardInnerCircleBG.style.margin = 'auto';
       cardInnerCircleBG.style.border = '2px solid white';
 
