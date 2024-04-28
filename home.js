@@ -7,7 +7,6 @@ const main = document.createElement('main');
 document.body.appendChild(main);
 
 let color = 5
-let cardsQuantity = 16;
 
 //! function to create productsPage
 let productsPage = (tittle) =>{
@@ -74,7 +73,7 @@ sunMoon.style.boxShadow = '0 0 35px 5px yellow, 0 0 25px 10px yellow inset';
 
 }
 
-let newProductCardContainer = () =>{
+let newProductCardContainer = (cardsQuantity) =>{
 
 // ! Product Card Container
 const cardContainer = document.createElement('div');
@@ -88,7 +87,7 @@ main.appendChild(cardContainer);
 
 
 // *function to create new items cards
-let newProduct = (cardsQuantity) => {
+let newProduct = () => {
 
     //* Card Element
     const card = document.createElement('div');
@@ -215,14 +214,14 @@ let newProduct = (cardsQuantity) => {
 
 
 let id;
-for (let i = 0; i < 15; i++) {
+for (let i = 0; i < cardsQuantity; i++) {
     id = i;
-    newProduct(cardsQuantity)
+    newProduct()
 }
 
 }
 
 productsPage('Home')
-newProductCardContainer(15);
+newProductCardContainer(16);
 //console.log(main)
 
