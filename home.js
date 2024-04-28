@@ -102,6 +102,15 @@ let newProduct = (cardsQuantity) => {
     wishlistButton.style.marginLeft = '80px';
     wishlistButton.style.marginTop = '10px';
     wishlistButton.style.position = 'absolute';
+    var icon = document.createElement('i');
+    icon.className = 'fa-solid fa-heart';
+    
+    // Set styles for the icon
+    icon.style.marginRight = '5px'; 
+    icon.style.color='black'
+    
+    // Append the icon to the wishlistButton
+    wishlistButton.appendChild(icon);
 
 
 
