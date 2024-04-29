@@ -6,13 +6,11 @@ import { products } from "./products.js";
 export const main = document.createElement('main');
 document.body.appendChild(main);
 
-let color = 5
 
 //! function to create productsPage
-let productsPage = (tittle) =>{
+export let productsPage = (tittle) =>{
 
-//* Global Identifiers
-//? ColorIndex to give unique colors to cards
+
 
 
 
@@ -74,6 +72,10 @@ sunMoon.style.boxShadow = '0 0 35px 5px yellow, 0 0 25px 10px yellow inset';
 }
 
 let newProductCardContainer = () =>{
+
+    
+//? ColorIndex to give unique colors to cards
+let color = 5;
 
 // ! Product Card Container
 const cardContainer = document.createElement('div');
