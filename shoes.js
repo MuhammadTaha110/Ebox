@@ -105,6 +105,12 @@ export let newProductCardContainer = () => {
         const wishlistButton = document.createElement('button');
         card.appendChild(wishlistButton);
 
+        const addToCartButton = document.createElement('button');
+        //card.appendChild(addToCartButton);
+
+        wishlistButton.className = 'card-buttons';
+        addToCartButton.className = 'card-buttons';
+        
         wishlistButton.style.width = '30px';
         wishlistButton.style.height = '30px';
         wishlistButton.style.borderRadius = '6px';
