@@ -3,7 +3,7 @@ import { themeColors } from "./theme.js";
 import { products } from "./products.js";
 
 
-const main = document.createElement('main');
+export const main = document.createElement('main');
 document.body.appendChild(main);
 
 let color = 5
