@@ -123,10 +123,6 @@ export let newProductCardContainer = () => {
         icon.style.justifyContent = 'center'
         icon.style.fontSize = '1.2rem'
 
-
-
-
-
         //* card InnerDiv Rectangle
         const cardInnerDivBG = document.createElement('div');
         // Append the new rectangular div element to the card
