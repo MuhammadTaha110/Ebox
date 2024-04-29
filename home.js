@@ -73,7 +73,7 @@ sunMoon.style.boxShadow = '0 0 35px 5px yellow, 0 0 25px 10px yellow inset';
 
 }
 
-let newProductCardContainer = (cardsQuantity) =>{
+let newProductCardContainer = () =>{
 
 // ! Product Card Container
 const cardContainer = document.createElement('div');
@@ -214,7 +214,7 @@ let newProduct = () => {
 
 
 let id;
-for (let i = 0; i < cardsQuantity; i++) {
+for (let i = 0; i < products.length; i++) {
     id = i;
     newProduct()
 }
@@ -222,6 +222,5 @@ for (let i = 0; i < cardsQuantity; i++) {
 }
 
 productsPage('Home')
-newProductCardContainer(16);
-//console.log(main)
+newProductCardContainer();
 

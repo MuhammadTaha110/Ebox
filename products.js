@@ -127,6 +127,11 @@ export const products =
             price: '$58.0',
             img: 'imgs/Jordan.png'
         },
+        {
+            tittle: 'AirMax',
+            price: '$62.0',
+            img: 'imgs/Nike Giannis.png'
+        },
         
 
     ]
