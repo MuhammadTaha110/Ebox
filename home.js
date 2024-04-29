@@ -164,7 +164,7 @@ let newProduct = () => {
       card.appendChild(productImage);
       productImage.className = 'productImage';
       productImage.style.position= 'absolute';
-      productImage.src =  products[id].img;
+      productImage.src =  products.img;
       productImage.style.width = '75%';
       productImage.style.top = '30%'
       productImage.style.left = '10%'
@@ -189,8 +189,8 @@ let newProduct = () => {
     productPriceContainer.className = 'productPrice';
 
 
-    const productTittle = document.createTextNode( products[id].tittle);
-    const productPrice = document.createTextNode( products[id].price);
+    const productTittle = document.createTextNode( products.tittle);
+    const productPrice = document.createTextNode( products.price);
 
     productTittleContainer.style.fontWeight = '800';
     productTittleContainer.style.color = themeColors[6];
@@ -213,11 +213,16 @@ let newProduct = () => {
 }
 
 
-let id;
+/*let id;
 for (let i = 0; i < cardsQuantity; i++) {
     id = i;
     newProduct()
+}*/
+let id;
+products.forEach(element => {
+    newProduct();
 }
+);
 
 }
 
