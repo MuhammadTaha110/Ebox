@@ -34,11 +34,29 @@ body{
     justify-content: center;
     background-color: var(--bg-color);
     width: 95%;
-    height: 420px;
-    border: 2px solid var(--main-color);
+    height: 440px;
     border-radius: 16px;
     margin-left: auto;
     margin-right: auto;
+    background-color: var(--card-bg-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.shoeDetails .shoe-img-frame-cicle{
+    width: 22em;
+    height: 22em;
+    background-color: var(--card-bg-color);
+    border-radius: 50%;
+    margin-top: 40px;
+    box-shadow:var(--main-color) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoeDetails .shoe-img-frame-cicle img{
+    width: 80%;
+    
+
+}
 
