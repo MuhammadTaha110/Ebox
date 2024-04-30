@@ -106,7 +106,7 @@ export let newProductCardContainer = () => {
         card.appendChild(wishlistButton);
 
         const addToCartButton = document.createElement('button');
-        //card.appendChild(addToCartButton);
+        card.appendChild(addToCartButton);
 
         wishlistButton.className = 'card-buttons';
         addToCartButton.className = 'card-buttons';
@@ -119,6 +119,16 @@ export let newProductCardContainer = () => {
         wishlistButton.style.marginLeft = '230px';
         wishlistButton.style.marginTop = '10px';
         wishlistButton.style.position = 'absolute';
+
+
+        addToCartButton.style.width = '30px';
+        addToCartButton.style.height = '30px';
+        addToCartButton.style.borderRadius = '6px';
+        addToCartButton.className = '.wishlist-btn';
+        addToCartButton.style.backgroundColor = themeColors[1];
+        addToCartButton.style.marginLeft = '190px';
+        addToCartButton.style.marginTop = '10px';
+        addToCartButton.style.position = 'absolute';
 
         var icon = document.createElement('i');
         wishlistButton.appendChild(icon);
