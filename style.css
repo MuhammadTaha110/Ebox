@@ -84,7 +84,17 @@ body{
     border-radius: 0px 16px 16px 0px;
 }
 
-.shoeDetails .product-tittle .colors-container{
-    background-color: #000100;
+.shoeDetails .colors-container{
+    height: 60px;
+    margin-top: 380px;
+    display: flex;
+    margin-left: 20px;
+}
+.shoeDetails .tittle-disc .colors-container .colors-div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0px 2px;
+    border: 2px solid var(--theme-color5);
 }
 
