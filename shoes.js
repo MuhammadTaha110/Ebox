@@ -130,14 +130,18 @@ export let newProductCardContainer = () => {
         addToCartButton.style.marginTop = '10px';
         addToCartButton.style.position = 'absolute';
 
-        var icon = document.createElement('i');
-        wishlistButton.appendChild(icon);
+        var wishlisticon = document.createElement('i');
+        wishlistButton.appendChild(wishlisticon);
 
-        icon.className = 'fa-solid fa-heart';
+        var carticon = document.createElement('i');
+        wishlistButton.appendChild(carticon);
+
+        wishlisticon.className = 'fa-solid fa-heart';
         //* Set styles for the icon
         icon.style.display = 'flex'
         icon.style.justifyContent = 'center'
         icon.style.fontSize = '1.2rem'
+
 
         //* card InnerDiv Rectangle
         const cardInnerDivBG = document.createElement('div');
