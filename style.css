@@ -32,6 +32,7 @@ body{
 .shoeDetails {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     background-color: var(--bg-color);
     width: 95%;
     height: 440px;
@@ -52,6 +53,7 @@ body{
     box-shadow:var(--main-color) 0px 5px 15px;
     text-align: center;
     position: absolute;
+    left: 35.0%;
 }
 
 .shoeDetails .shoe-img-frame-cicle img{
@@ -71,32 +73,85 @@ body{
     border-radius: 16px 0px 0px 16px;
 }
 
-.shoeDetails .product-disc{
-    margin-left: auto;
-    background-color: var(--main-color);
+.shoeDetails .tittle-disc .prod-tittle{
+    margin-left: 30px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.shoeDetails .tittle-disc .add-to-cart{
+    margin-left: 30px;
+    font-family: Poppins;
+    font-size: 1.2rem;
     width: 50%;
-    height: 440px;
-    border-radius: 0px 16px 16px 0px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    display: block;
+    margin-top: 10px;
 
 }
 
-.product-disc .price-container-disc{
-    color: var(--main-color2);
-    font-size: 1.8rem;
+.shoeDetails .tittle-disc .size-container{
+    width: 40%;
+    margin-left: 20px;
+}
+.shoeDetails .tittle-disc .size{
+
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    font-size: 1rem;
     font-weight: 600;
-    margin-top: 50px;
-    background-color: #03af66;
-    margin-top: 390px;
+    margin-left: 10px;
+    font-family: Poppins;
+    width: 40px;
+    height: 40px;
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+}
+
+.shoeDetails .tittle-disc .add-to-cart i{
+margin-left: 10px;
+}
+
+.shoeDetails .tittle-disc .prod-disc-para{
+    margin-left: 30px;
+    width: 60%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color:#636363;
+}
+
+.shoeDetails .product-disc{
+    background-color: var(--main-color);
+    background-color: transparent;
+    width: 50%;
+    height: 440px;
+    border-radius: 0px 16px 16px 0px;
+    text-align: right;
+
+}
+
+.tittle-disc .price-container-disc{
+    color: var(--main-color2);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 35px;
 
 }
 
 .shoeDetails .colors-container{
     height: 60px;
-    margin-top: 380px;
+    margin-top: 390px;
     display: flex;
-    margin-left: 20px;
+    justify-content: right;
+    margin-right: 20px;
 }
-.shoeDetails .tittle-disc .colors-container .colors-div{
+.shoeDetails .product-disc .colors-container .colors-div{
     width: 30px;
     height: 30px;
     border-radius: 50%;
