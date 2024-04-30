@@ -137,6 +137,8 @@ export let newProductCardContainer = () => {
         wishlistButton.appendChild(carticon);
 
         wishlisticon.className = 'fa-solid fa-heart';
+        carticon.className = 'fa-solid fa-heart';
+
         //* Set styles for the icon
         icon.style.display = 'flex'
         icon.style.justifyContent = 'center'
