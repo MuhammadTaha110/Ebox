@@ -69,19 +69,20 @@ body{
 }
 
 .shoeDetails .tittle-disc{
-    margin-left: auto;
-    background-color: transparent;
+    margin-right: auto;
+    background-color:transparent;
     width: 50%;
     height: 440px;
     border-radius: 16px 0px 0px 16px;
 }
 
 .shoeDetails .product-disc{
-    margin-right: auto;
+    margin-left: auto;
     background-color: var(--main-color);
     width: 50%;
     height: 440px;
     border-radius: 0px 16px 16px 0px;
+
 }
 
 .shoeDetails .colors-container{
