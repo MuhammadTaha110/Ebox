@@ -126,7 +126,7 @@ export let newProductCardContainer = () => {
         addToCartButton.style.borderRadius = '6px';
         addToCartButton.className = '.wishlist-btn';
         addToCartButton.style.backgroundColor = themeColors[1];
-        addToCartButton.style.marginLeft = '190px';
+        addToCartButton.style.marginLeft = '195px';
         addToCartButton.style.marginTop = '10px';
         addToCartButton.style.position = 'absolute';
 
@@ -134,16 +134,20 @@ export let newProductCardContainer = () => {
         wishlistButton.appendChild(wishlisticon);
 
         var carticon = document.createElement('i');
-        wishlistButton.appendChild(carticon);
+        addToCartButton.appendChild(carticon);
 
         wishlisticon.className = 'fa-solid fa-heart';
-        carticon.className = 'fa-solid fa-heart';
+        carticon.className = 'fa-solid fa-cart-shopping';
 
         //* Set styles for the icon
-        icon.style.display = 'flex'
-        icon.style.justifyContent = 'center'
-        icon.style.fontSize = '1.2rem'
+        wishlisticon.style.display = 'flex'
+        wishlisticon.style.justifyContent = 'center'
+        wishlisticon.style.fontSize = '1rem'
 
+          //* Set styles for the icon
+          carticon.style.display = 'flex'
+          carticon.style.justifyContent = 'center'
+          carticon.style.fontSize = '1rem'
 
         //* card InnerDiv Rectangle
         const cardInnerDivBG = document.createElement('div');
