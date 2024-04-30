@@ -212,11 +212,18 @@ export let newProductCardContainer = () => {
         const productPrice = document.createTextNode(products[id].price);
 
         productTittleContainer.style.fontWeight = '800';
+        productPriceContainer.style.display = 'flex';
+        productPriceContainer.style.alignContent = 'center';
+        productPriceContainer.style.justifyContent = 'center';
+        productTittleContainer.style.display = 'flex';
+        productTittleContainer.style.alignContent = 'center';
+        productTittleContainer.style.justifyContent = 'center';
+
         productTittleContainer.style.color = themeColors[6];
         productPriceContainer.style.color = themeColors[6];
 
-        productTittleContainer.style.marginLeft = '110px';
-        productPriceContainer.style.marginLeft = '115px';
+        //productTittleContainer.style.marginLeft = '110px';
+        //productPriceContainer.style.marginLeft = '115px';
 
 
 
