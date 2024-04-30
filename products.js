@@ -13,9 +13,9 @@ export const products =
         },
 
         {
-            tittle: 'Jordan',
-            price: '$58.0',
-            img: 'imgs/Jordan.png'
+            tittle: 'Jordan X-2',
+            price: '$70.0',
+            img: 'imgs/Jordan X-2.png'
         },
 
 
