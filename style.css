@@ -197,3 +197,11 @@ margin-left: 10px;
     border: 2px solid var(--theme-color5);
 }
 
+
+@media(max-width:800px){
+    .shoeDetails {
+       flex-direction: column;
+ 
+}
+
+}
