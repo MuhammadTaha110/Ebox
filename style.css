@@ -146,6 +146,7 @@ margin-left: 10px;
 
 }
 .shoeDetails .product-disc .diff-angles-img-container{
+    margin-top: 25px;
     margin-right: auto;
     text-align: right;
 }
@@ -164,7 +165,7 @@ margin-left: 10px;
 
 .shoeDetails .colors-container{
     height: 60px;
-    margin-top: 390px;
+    margin-top: 0px;
     display: flex;
     justify-content: right;
     margin-right: 20px;
