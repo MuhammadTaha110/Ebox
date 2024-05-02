@@ -293,8 +293,8 @@ body {
 .shoeDetails .tittle-disc .btn-container .grouped-btns{
     display: flex;
     flex-wrap: wrap;
+    text-align: right;
 
-    justify-content: left;
 }
 
     
