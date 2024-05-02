@@ -245,6 +245,174 @@ body {
     border: 2px solid var(--theme-color5);
 }
 
+@media(max-width:850px){
+    .shoeDetails .tittle-disc .prod-tittle {
+        font-size: 1.5rem;
+    }
+    
+    /*? Description Paragraph*/
+    .shoeDetails .tittle-disc .prod-disc-para {
+        font-size: 0.6rem;
+    }
+}
+
+
+.shoeDetails .tittle-disc .btn-container .add-to-cart,
+.shoeDetails .tittle-disc .btn-container .buy-now{
+    margin-left: 30px;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    display: block;
+    margin-top: 10px;
+
+}
+
+.shoeDetails .tittle-disc .btn-container .grouped-btns{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+
+}
+
+.shoeDetails .tittle-disc .btn-container .add-to-cart{
+    width: 80%;
+}
+.shoeDetails .tittle-disc .btn-container .add-to-wishlist{
+    background-color: var(--theme-color1);
+    width: 15%;
+    height: 50px;
+    border-radius:  0px  10px  10px 0px;
+    border: 2px solid var(--theme-color5);
+    margin-top: 10px;
+    margin-left: 75%;
+    z-index: 1;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    background-color: var(--theme-color5);
+}
+
+.shoeDetails .tittle-disc .add-to-cart i {
+    margin-left: 10px;
+}
+
+
+/* *Shoe Details 2nd Section */
+
+.shoeDetails .shoe-img-frame-cicle {
+    background-color: var(--card-bg-color);
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: -50px;
+    box-shadow: var(--main-color) 0px 5px 15px;
+    text-align: center;
+    width: 320px;
+    height:  320px;
+}
+
+.shoeDetails .shoe-img-frame-cicle img {
+    margin-top: 70px;
+    width: 80%;
+    /* ?Adjust the horizontal and vertical offsets, blur radius, and color */
+    filter: drop-shadow(10px 13px 4px #888888);
+}
+
+/* *Shoe Details 3rd Section */
+
+.shoeDetails .product-disc {
+    background-color: var(--main-color);
+    background-color: transparent;
+    width: 30%;
+    border-radius: 0px 16px 16px 0px;
+    text-align: right;
+    height: 100%;
+
+}
+
+
+
+.shoeDetails .product-disc .size-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shoeDetails .product-disc .size {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 10px;
+    font-family: Poppins;
+    width: 50px;
+    height: 40px;
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+}
+
+.shoeDetails .product-disc .size:hover {
+    background-color: var(--main-color);
+}
+
+
+
+.shoeDetails .product-disc .diff-angles-img-container {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    height: 200px;
+}
+
+.shoeDetails .product-disc .diff-angles-img img {
+    width: 90%;
+}
+
+.shoeDetails .product-disc .diff-angles-img {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 8px;
+    margin-left: 8px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    width: 35%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.shoeDetails .colors-container {
+    height: 60px;
+    margin-top: 15px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shoeDetails .product-disc .colors-container .colors-div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0px 2px;
+    border: 2px solid var(--theme-color5);
+}
 /*
 
 @media(max-width:970px){
