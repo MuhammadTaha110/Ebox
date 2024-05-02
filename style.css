@@ -1,14 +1,14 @@
 :root {
-    --bg-color:#feebc0;
-    --main-color:#f9b623;
-    --shadow-color:#f5c79a;
-    --card-bg-color:#ffefe5;
-    --border-color:#fef3d8;
-    --theme-color1:#ff6900;
-    --theme-color2:#453e9d;
-    --theme-color3:#03af66;
-    --theme-color4:#088de7;
-    --theme-color5:#000100;
+    --bg-color: #feebc0;
+    --main-color: #f9b623;
+    --shadow-color: #f5c79a;
+    --card-bg-color: #ffefe5;
+    --border-color: #fef3d8;
+    --theme-color1: #ff6900;
+    --theme-color2: #453e9d;
+    --theme-color3: #03af66;
+    --theme-color4: #088de7;
+    --theme-color5: #000100;
 }
 
 @font-face {
@@ -16,15 +16,16 @@
     src: url(fonts/Poppins-Regular.ttf);
 }
 
-body{
+body {
     font-family: Poppins;
 }
+
 /*body{
     background-color: var(--bg-color);
 }*/
 
 
-.card:hover .cardInnerBG{
+.card:hover .cardInnerBG {
     transition: .1s ease;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
@@ -34,7 +35,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     background-color: var(--bg-color);
-    width: 95%;
+    width: 99%;
     height: 440px;
     border-radius: 16px;
     margin-left: auto;
@@ -44,47 +45,55 @@ body{
     position: relative;
 }
 
-.shoeDetails .shoe-img-frame-cicle{
-    width: 22em;
-    height: 22em;
-    background-color: var(--card-bg-color);
-    border-radius: 50%;
-    margin-top: 40px;
-    box-shadow:var(--main-color) 0px 5px 15px;
-    text-align: center;
-    position: absolute;
-    left: 35.0%;
-}
+/* *Shoe Details 1st Section */
 
-.shoeDetails .shoe-img-frame-cicle img{
-    margin-top: 70px;
-    width: 80%;
-    /* ?Adjust the horizontal and vertical offsets, blur radius, and color */
-    filter: drop-shadow(10px 13px 4px #888888); 
-}
-
-
-
-.shoeDetails .tittle-disc{
+.shoeDetails .tittle-disc {
     margin-right: auto;
-    background-color:transparent;
-    width: 50%;
+    background-color: transparent;
+    width: 35%;
     height: 440px;
     border-radius: 16px 0px 0px 16px;
 }
 
-.shoeDetails .tittle-disc .prod-tittle{
+.shoeDetails .tittle-disc .prod-tittle {
     margin-left: 30px;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-top: 30px;
 }
 
-.shoeDetails .tittle-disc .add-to-cart{
+.tittle-disc .price-container-disc {
+    color: var(--main-color2);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-left: 30px;
+
+}
+
+/*? Description Paragraph*/
+.shoeDetails .tittle-disc .prod-disc-para {
+    margin-left: 30px;
+    width: 80%;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #636363;
+    height: 120px;
+
+}
+
+.shoeDetails .tittle-disc .btn-container{
+    position: relative;
+}
+
+
+.shoeDetails .tittle-disc .btn-container .add-to-cart,
+.shoeDetails .tittle-disc .btn-container .buy-now{
     margin-left: 30px;
     font-family: Poppins;
     font-size: 1.2rem;
-    width: 50%;
+    width: 80%;
     height: 50px;
     border-radius: 10px;
     background-color: var(--main-color);
@@ -93,16 +102,81 @@ body{
 
 }
 
-.shoeDetails .product-disc .size-container{
-    width: 50%;
+.shoeDetails .tittle-disc .btn-container .grouped-btns{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+
+}
+
+.shoeDetails .tittle-disc .btn-container .add-to-cart{
+    width: 80%;
+}
+.shoeDetails .tittle-disc .btn-container .add-to-wishlist{
+    background-color: var(--theme-color1);
+    width: 15%;
+    height: 50px;
+    border-radius:  0px  10px  10px 0px;
+    border: 2px solid var(--theme-color5);
+    margin-top: 10px;
+    margin-left: 75%;
+    z-index: 1;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    background-color: var(--theme-color5);
+}
+
+.shoeDetails .tittle-disc .add-to-cart i {
+    margin-left: 10px;
+}
+
+
+/* *Shoe Details 2nd Section */
+
+.shoeDetails .shoe-img-frame-cicle {
+    background-color: var(--card-bg-color);
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: -50px;
+    box-shadow: var(--main-color) 0px 5px 15px;
+    text-align: center;
+    width: 320px;
+    height:  320px;
+}
+
+.shoeDetails .shoe-img-frame-cicle img {
+    margin-top: 70px;
+    width: 80%;
+    /* ?Adjust the horizontal and vertical offsets, blur radius, and color */
+    filter: drop-shadow(10px 13px 4px #888888);
+}
+
+/* *Shoe Details 3rd Section */
+
+.shoeDetails .product-disc {
+    background-color: var(--main-color);
+    background-color: transparent;
+    width: 30%;
+    border-radius: 0px 16px 16px 0px;
+    text-align: right;
+    height: 100%;
+
+}
+
+
+
+.shoeDetails .product-disc .size-container {
+    width: 80%;
     margin-left: auto;
+    margin-right: auto;
     text-align: right;
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
-.shoeDetails .product-disc .size{
 
+.shoeDetails .product-disc .size {
     margin-top: 4px;
     margin-bottom: 4px;
     font-size: 1rem;
@@ -115,56 +189,28 @@ body{
     border-radius: 8px;
 }
 
-.shoeDetails .product-disc .size:hover{
+.shoeDetails .product-disc .size:hover {
     background-color: var(--main-color);
 }
 
-.shoeDetails .tittle-disc .add-to-cart i{
-margin-left: 10px;
-}
 
-.shoeDetails .tittle-disc .prod-disc-para{
-    margin-left: 30px;
-    width: 60%;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-top: 10px;
-    color:#636363;
-    height: 120px;
-    
-}
 
-.shoeDetails .product-disc{
-    background-color: var(--main-color);
-    background-color: transparent;
-    width: 50%;
-    height: 440px;
-    border-radius: 0px 16px 16px 0px;
-    text-align: right;
-
-}
-
-.tittle-disc .price-container-disc{
-    color: var(--main-color2);
-    font-size: 2rem;
-    font-weight: 600;
-    margin-top: -10px;
-    margin-left: 30px;
-
-}
-.shoeDetails .product-disc .diff-angles-img-container{
+.shoeDetails .product-disc .diff-angles-img-container {
     margin-top: 40px;
-    margin-left: 230px;
-    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    width: 55%;
+    justify-content: center;
+    width: 80%;
     height: 200px;
 }
-.shoeDetails .product-disc .diff-angles-img img{
+
+.shoeDetails .product-disc .diff-angles-img img {
     width: 90%;
 }
-.shoeDetails .product-disc .diff-angles-img{
+
+.shoeDetails .product-disc .diff-angles-img {
 
     display: flex;
     flex-wrap: wrap;
@@ -181,15 +227,17 @@ margin-left: 10px;
     margin-bottom: 8px;
 }
 
-.shoeDetails .colors-container{
+.shoeDetails .colors-container {
     height: 60px;
     margin-top: 15px;
     width: 50%;
     display: flex;
     justify-content: center;
-    margin-left: 180px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.shoeDetails .product-disc .colors-container .colors-div{
+
+.shoeDetails .product-disc .colors-container .colors-div {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -197,8 +245,9 @@ margin-left: 10px;
     border: 2px solid var(--theme-color5);
 }
 
+/*
 
-@media(max-width:800px){
+@media(max-width:970px){
     .shoeDetails {
         display: flex;
         justify-content: center;
@@ -215,43 +264,27 @@ margin-left: 10px;
     }
     
     .shoeDetails .shoe-img-frame-cicle{
-        width: 22em;
-        height: 22em;
+        width: 15em;
+        height: 15em;
         background-color: var(--card-bg-color);
         border-radius: 50%;
-        margin-top: 40px;
+        margin-top: 80px;
         box-shadow:var(--main-color) 0px 5px 15px;
         text-align: center;
         position: absolute;
         left: 35.0%;
     }
+
     
-    .shoeDetails .shoe-img-frame-cicle img{
-        margin-top: 70px;
-        width: 80%;
-        /* ?Adjust the horizontal and vertical offsets, blur radius, and color */
-        filter: drop-shadow(10px 13px 4px #888888); 
-    }
-    
-    
-    
-    .shoeDetails .tittle-disc{
-        margin-right: auto;
-        background-color:transparent;
-        width: 50%;
-        height: 440px;
-        border-radius: 16px 0px 0px 16px;
-    }
     
     .shoeDetails .tittle-disc .prod-tittle{
-        margin-left: 30px;
-        font-size: 2.2rem;
-        font-weight: 600;
-        margin-top: 30px;
+        margin-left: 20px;
+        font-size: 1.5rem;
+        margin-top: 20px;
     }
     
     .shoeDetails .tittle-disc .add-to-cart{
-        margin-left: 30px;
+        margin-left: 20px;
         font-family: Poppins;
         font-size: 1.2rem;
         width: 50%;
@@ -294,13 +327,10 @@ margin-left: 10px;
     }
     
     .shoeDetails .tittle-disc .prod-disc-para{
-        margin-left: 30px;
-        width: 60%;
-        font-size: 0.8rem;
-        font-weight: 600;
-        margin-top: 10px;
-        color:#636363;
-        height: 120px;
+        font-size: 0.7rem;
+        height: 150px;
+        margin-top: 20px;
+        margin-left: 20px;
         
     }
     
@@ -315,11 +345,9 @@ margin-left: 10px;
     }
     
     .tittle-disc .price-container-disc{
-        color: var(--main-color2);
-        font-size: 2rem;
-        font-weight: 600;
-        margin-top: -10px;
-        margin-left: 30px;
+        margin-left: 20px;
+        font-size: 1.5rem;
+        margin-top: 0px;
     
     }
     .shoeDetails .product-disc .diff-angles-img-container{
@@ -369,3 +397,5 @@ margin-left: 10px;
 
 
 }
+
+*/
