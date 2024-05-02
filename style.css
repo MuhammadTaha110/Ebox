@@ -390,35 +390,17 @@ body {
     /* *Shoe Details 2nd Section */
     
     .shoeDetails .shoe-img-frame-cicle {
-        background-color: var(--card-bg-color);
-        border-radius: 50%;
-        margin-top: 40px;
-        margin-left: -50px;
-        box-shadow: var(--main-color) 0px 5px 15px;
-        text-align: center;
-        width: 320px;
-        height:  320px;
+        margin: -280px auto;
+        width: 40%;
+        height: 60%;
     }
     
     .shoeDetails .shoe-img-frame-cicle img {
         margin-top: 70px;
         width: 80%;
-        /* ?Adjust the horizontal and vertical offsets, blur radius, and color */
-        filter: drop-shadow(10px 13px 4px #888888);
     }
     
     /* *Shoe Details 3rd Section */
-    
-    .shoeDetails .product-disc {
-        background-color: var(--main-color);
-        background-color: transparent;
-        width: 30%;
-        border-radius: 0px 16px 16px 0px;
-        text-align: right;
-        height: 100%;
-    
-    }
-    
     
     
     .shoeDetails .product-disc .size-container {
@@ -453,7 +435,7 @@ body {
     
     .shoeDetails .product-disc .diff-angles-img-container {
         margin-top: 40px;
-        margin-left: auto;
+        margin-left: 240%;
         margin-right: auto;
         display: flex;
         flex-wrap: wrap;
