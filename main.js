@@ -6,7 +6,7 @@ import { shoeDetails } from "./shoeDetail.js";
 //productsPage('Shoes');
 //newProductCardContainer();
 
-shoeDetails('Shoe Details');
+//shoeDetails('Shoe Details');
 
 
 

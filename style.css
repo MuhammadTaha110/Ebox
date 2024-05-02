@@ -339,52 +339,14 @@ body {
     }
     
     .shoeDetails .tittle-disc .btn-container{
-        display: none;
-        position: relative;
-    }
-    
-    
-    .shoeDetails .tittle-disc .btn-container .add-to-cart,
-    .shoeDetails .tittle-disc .btn-container .buy-now{
-        margin-left: 30px;
-        font-family: Poppins;
-        font-size: 1.2rem;
-        width: 80%;
-        height: 50px;
-        border-radius: 10px;
-        background-color: var(--main-color);
-        display: block;
-        margin-top: 10px;
-    
-    }
-    
-    .shoeDetails .tittle-disc .btn-container .grouped-btns{
-        display: flex;
-        flex-wrap: wrap;
-        height: 60px;
-    
+        text-align: center;
+        margin-top: 220px;
     }
     
     .shoeDetails .tittle-disc .btn-container .add-to-cart{
-        width: 80%;
+        width: 87%;
     }
-    .shoeDetails .tittle-disc .btn-container .add-to-wishlist{
-        background-color: var(--theme-color1);
-        width: 15%;
-        height: 50px;
-        border-radius:  0px  10px  10px 0px;
-        border: 2px solid var(--theme-color5);
-        margin-top: 10px;
-        margin-left: 75%;
-        z-index: 1;
-        color: var(--main-color);
-        font-size: 1.5rem;
-        background-color: var(--theme-color5);
-    }
-    
-    .shoeDetails .tittle-disc .add-to-cart i {
-        margin-left: 10px;
-    }
+
     
     
     /* *Shoe Details 2nd Section */
@@ -406,29 +368,8 @@ body {
     .shoeDetails .product-disc .size-container {
         width: 80%;
         margin-top: -190px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        
     }
-    
-    .shoeDetails .product-disc .size {
-        margin-top: 4px;
-        margin-bottom: 4px;
-        font-size: 1rem;
-        font-weight: 600;
-        margin-left: 10px;
-        font-family: Poppins;
-        width: 50px;
-        height: 40px;
-        background-color: var(--card-bg-color);
-        border-radius: 8px;
-    }
-    
-    .shoeDetails .product-disc .size:hover {
-        background-color: var(--main-color);
-    }
-    
-    
     
     .shoeDetails .product-disc .diff-angles-img-container {
         margin-left: 240%;
@@ -436,23 +377,8 @@ body {
     }
     
     .shoeDetails .colors-container {
-        height: 60px;
-        margin-top: 15px;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
     }
-    
-    .shoeDetails .product-disc .colors-container .colors-div {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        margin: 0px 2px;
-        border: 2px solid var(--theme-color5);
-    }
-    
     
 }
 
