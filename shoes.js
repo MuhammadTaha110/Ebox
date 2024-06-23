@@ -113,6 +113,7 @@ export let newProductCardContainer = () => {
         addToCartButton.className = 'card-buttons';
         
         wishlistButton.style.width = '30px';
+        wishlistButton.style.cursor = 'pointer';
         wishlistButton.style.height = '30px';
         wishlistButton.style.borderRadius = '6px';
         wishlistButton.className = '.wishlist-btn';
@@ -125,6 +126,7 @@ export let newProductCardContainer = () => {
         addToCartButton.style.width = '30px';
         addToCartButton.style.height = '30px';
         addToCartButton.style.borderRadius = '6px';
+        addToCartButton.style.cursor = 'pointer';
         addToCartButton.className = '.wishlist-btn';
         addToCartButton.style.backgroundColor = themeColors[1];
         addToCartButton.style.marginLeft = '195px';
