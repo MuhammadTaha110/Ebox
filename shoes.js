@@ -211,7 +211,7 @@ export let newProductCardContainer = () => {
         productPriceContainer.className = 'productPrice';
 
 
-        const productTittle = document.createTextNode(products[id].tittle);
+        const productTittle = document.createTextNode(products[id].title);
         const productPrice = document.createTextNode(products[id].price);
 
         productTittleContainer.style.fontWeight = '800';

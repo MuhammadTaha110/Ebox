@@ -309,7 +309,7 @@ body {
 
 @media(max-width:722px){
     .shoeDetails {
-        display: block;
+        display: none;
     }
     
     /* *Shoe Details 1st Section */
