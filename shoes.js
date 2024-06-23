@@ -16,7 +16,8 @@ export let productsPage = (tittle) => {
     home.style.width = '100%';
     home.style.backgroundColor = themeColors[0];
     home.style.textAlign = 'center';
-    //home.style.display = 'flex';
+    //! ye uncomment kia tha
+    home.style.display = 'flex';
 
     main.appendChild(home);
     document.body.style.backgroundColor = themeColors[0];

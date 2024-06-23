@@ -43,6 +43,8 @@ body {
     background-color: var(--card-bg-color);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: relative;
+
+    display: none;
 }
 
 /* *Shoe Details 1st Section */
